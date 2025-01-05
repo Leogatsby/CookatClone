@@ -4,7 +4,7 @@ import Header from "../Header/Header";
 import { useNavigate } from "react-router-dom"; // useNavigate 임포트
 
 import { Link } from "react-router-dom";
-import useSelectedFooterTab from "../../hooks/useSeletedFooterTab";
+import useSelectedFooterTab from "../../../hooks/useSeletedFooterTab";
 
 function FooterNavTab() {
   const navigate = useNavigate(); // URL 변경을 위한 navigate 함수

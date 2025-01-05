@@ -3,8 +3,8 @@ import useSelectedHeaderMenu from "../../hooks/useSeletedHeaderMenu";
 import useSelecteFooterTab from "../../hooks/useSeletedFooterTab";
 import "./New.css";
 
-import Header from "../../components/Header/Header";
-import FooterNavTab from "../../components/FooterNavTab/FooterNavTab";
+import Header from "../../components/LayoutComponents/Header/Header";
+import FooterNavTab from "../../components/LayoutComponents/FooterNavTab/FooterNavTab";
 
 function New() {
   const { selectedMenu } = useSelectedHeaderMenu();

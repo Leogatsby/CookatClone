@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
-import useSelectedHeaderMenu from "../../hooks/useSeletedHeaderMenu";
-import useSelecteFooterTab from "../../hooks/useSeletedFooterTab";
+
 import "./Main.css";
 
-import Header from "../../components/Header/Header";
-import FooterNavTab from "../../components/FooterNavTab/FooterNavTab";
+import Header from "../../components/LayoutComponents/Header/Header";
+import FooterNavTab from "../../components/LayoutComponents/FooterNavTab/FooterNavTab";
+
+import useSelectedHeaderMenu from "../../hooks/useSeletedHeaderMenu";
+import useSelectedFooterTab from "../../hooks/useSeletedFooterTab";
 
 function Main() {
   const { selectedMenu } = useSelectedHeaderMenu();
-  const { selectedFooterTab } = useSelecteFooterTab();
+  const { selectedFooterTab } = useSelectedFooterTab();
 
   return (
     <div className="Main">
