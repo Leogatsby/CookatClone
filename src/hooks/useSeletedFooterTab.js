@@ -2,7 +2,6 @@ import { create } from "zustand";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-// Zustand 스토어 정의
 const useFooterTabStore = create((set) => ({
   FooterTabItems: [
     { name: "홈", icon: "", url: "/" },
@@ -15,7 +14,6 @@ const useFooterTabStore = create((set) => ({
   setSelectedFooterTab: (tab) => set({ selectedFooterTab: tab })
 }));
 
-// URL 동기화 훅
 const useSelecteFooterTab = () => {
   const { FooterTabItems, setSelectedFooterTab } = useFooterTabStore();
   const location = useLocation();
