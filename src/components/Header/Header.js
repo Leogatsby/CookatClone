@@ -26,7 +26,6 @@ function Header() {
             </li>
           ))}
         </ul>
-        <div>{selectedMenu.name}</div>
       </div>
     </div>
   );
