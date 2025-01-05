@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  @font-face {
+    font-family: "Pretendard-Regular";
+    src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+      format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  /*이렇게 해야 이미지를 넣는다고 해도 넘치거나 줄지 않는다.*/
+  vertical-align: top;
+  /*이미지가 인라인 요소라서 아예 top라인에 맞춰서 불필요 여백 제거 */
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
