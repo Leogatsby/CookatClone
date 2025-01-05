@@ -1,28 +1,31 @@
-import { createBrowserRouter, RouterProvider,Navigate } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate
+} from "react-router-dom";
 import Main from "./pages/Main/Main";
+import New from "./pages/new/New";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main />,
+    element: <Main />
   },
   {
     path: "/new",
-    element: <div>쿠켓신공 페이지</div>,
+    element: <New />
   },
   {
     path: "/old-path",
-    element: <Navigate to="/new" replace />, // "/old-path"로 접근 시 "/new"로 리다이렉트
+    element: <Navigate to="/new" replace /> // "/old-path"로 접근 시 "/new"로 리다이렉트
   }
-  
 ]);
 
-function App() {
+function Router() {
   return <RouterProvider router={router} />;
 }
 
-export default App;
-
+export default Router;
 
 // 동적 라우팅 필요할시
 // {

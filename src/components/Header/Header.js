@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import useSelectedHeaderMenu from "../../hooks/useSeletedHeaderMenu";
-
 import "./Header.css";
 
 function Header() {
@@ -19,7 +18,6 @@ function Header() {
           {menuItems.map((menu) => (
             <li key={menu.name}>
               <Link
-                to={menu.url}
                 className={selectedMenu.name === menu.name ? "active" : ""}
                 onClick={() => setSelectedMenu(menu)}
               >
@@ -28,6 +26,7 @@ function Header() {
             </li>
           ))}
         </ul>
+        <div>{selectedMenu.name}</div>
       </div>
     </div>
   );

@@ -1,19 +1,19 @@
 import { Link } from "react-router-dom";
 import useSelectedHeaderMenu from "../../hooks/useSeletedHeaderMenu";
 import useSelecteFooterTab from "../../hooks/useSeletedFooterTab";
-import "./Main.css";
+import "./New.css";
 
 import Header from "../../components/Header/Header";
 import FooterNavTab from "../../components/FooterNavTab/FooterNavTab";
 
-function Main() {
+function New() {
   const { selectedMenu } = useSelectedHeaderMenu();
   const { selectedFooterTab } = useSelecteFooterTab();
 
   return (
-    <div className="Main">
+    <div className="New">
       <Header />
-      <div className="MainContents">
+      <div className="Contents">
         <div>{selectedMenu.name}</div>
         <div>{selectedFooterTab.name}</div>
       </div>
@@ -22,4 +22,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default New;
