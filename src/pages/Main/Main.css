@@ -1,3 +1,13 @@
-.Main .Contents {
+.Main {
+}
+
+.Main .MainContents {
+  height: 75%;
+  border: 3px solid orange;
+  overflow-y: scroll;
+}
+
+.Main .MainContents > div {
+  width: 100%;
   height: 100%;
 }

@@ -1,5 +1,8 @@
 import React from "react";
-import "./FooterNavTab.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+
+import "./FooterNavTab.scss";
 import Header from "../Header/Header";
 import { useNavigate } from "react-router-dom"; // useNavigate 임포트
 
@@ -17,6 +20,8 @@ function FooterNavTab() {
       <ul className="FooterNavTab flex">
         {FooterTabItems.map((tab) => (
           <li key={tab.name}>
+            <FontAwesomeIcon icon={faBars} />
+            <br></br>
             <a
               className={selectedFooterTab.name === tab.name ? "active" : ""}
               onClick={() => {
